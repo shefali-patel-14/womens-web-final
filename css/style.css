@@ -251,6 +251,9 @@ main div:nth-of-type(even) img{
      padding: 10px;
      border-radius: 20px;
     }
+.bgimage img:hover{
+            opacity: 0.3;
+            }
 
 img {
         animation: fadeIn 3s;
