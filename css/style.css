@@ -1,0 +1,555 @@
+body{
+    line-height: 140%;
+    font-family: 'Abel';
+    }   
+
+a.skip{
+    background: #141d20;
+    border: #edf0f1;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: right 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    }
+
+a.skip:focus{
+    right:0px;
+    top: 15px;
+    }
+
+main{
+    padding-bottom: 30px;
+}
+
+main.index {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+p.dict{
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin: auto;
+    background-color: #c64648;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*navigation*/
+.container {
+    max-width: 1050px;
+    width: 90%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 1px 4px #141d20;
+    background-color: #141d20;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav .nav_links {
+    display: flex;
+}
+
+nav .nav-container li {
+    list-style: none;
+}
+
+nav .nav-container a {
+    text-decoration: none;
+    color: #edf0f1;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+nav .nav-container a:hover{
+    font-weight: bolder;
+}
+.current {
+    padding: 9px 15px;
+    background-color: #9d383a; 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu_label {
+    display: hidden;
+    opacity: 0;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #edf0f1;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+nav .nav_links {
+    padding-top: 120px;
+    background-color: #141d20;
+    opacity: 85%;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+nav .nav_links li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .nav_links {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+transform: rotate(-45deg);
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+   
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin: 20px;
+    }
+
+.indexh1{
+    color: #141d20;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    }
+
+h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    }
+
+main img{
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    }
+  
+main div:nth-of-type(odd) img{
+    border: dashed 8px #141d20;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+
+main div:nth-of-type(even) img{
+    border: dashed 8px #F05C5E;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+
+.bgimage{
+     background-image: url(../images/pattern-07.jpg);
+     background-origin:padding-box; padding: 10px;
+    }
+
+.bgimage img{
+     width: 800px;
+     display: block;
+     margin: auto;
+     border: dashed 8px #141d20;
+     padding: 10px;
+     border-radius: 20px;
+    }
+
+img {
+        animation: fadeIn 3s;
+      }
+      
+     @keyframes fadeIn {
+        0% { opacity: 0; 
+        }
+        100% { opacity: 1; 
+        }
+    }
+
+main img:hover{
+    opacity: 0.3;
+    }
+
+dt{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #c64648;
+    }
+
+dd{
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+dd p{
+    font-weight: regular;
+    font-size: 16px;
+}
+
+p{
+    margin-bottom: 10px;
+    }
+
+div ul{
+    margin-bottom: 30px;
+    }
+
+a{
+    color: #F05C5E;
+    }
+
+.wslink {
+    color: #F05C5E;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.grid ul li{
+    line-height: 100%;
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.dict{
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.indexgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 20px;
+    grid-row-gap: 10px;
+}
+
+.indexgrid div{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f7eeeedd;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.grid{
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.grid div{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f7eeeedd;
+}
+
+.gridview{
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.gridview div{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f7eeeedd;
+}
+
+footer{
+    padding: 10px;
+    background-color: #141d20;
+    }
+
+footer p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+        }
+
+footer .fa-solid{
+        font-size: 20px;
+    }
+
+  
+   /*tablet view*/ 
+@media screen and (min-width: 768px) {
+        .grid{
+            width: 90%;
+            margin: auto;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            grid-column-gap: 35px;
+            grid-row-gap: 10px;
+        }
+        
+        .grid div{
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #f7eeeedd;
+        }
+        
+        .gridview{
+            width: 90%;
+            margin: auto;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-column-gap: 35px;
+            grid-row-gap: 10px;
+        }
+    
+        .gridview div{
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #f7eeeedd;
+        }
+        
+        img {
+            animation: fadeIn 6s;
+          }
+          
+         @keyframes fadeIn {
+            0% { opacity: 0; 
+            }
+            100% { opacity: 1; 
+            }
+        }
+
+        main div:nth-of-type(odd) img{
+            border: solid 8px #141d20;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            }
+        
+        main div:nth-of-type(even) img{
+            border: solid 8px #F05C5E;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            }
+
+        .bgimage img{
+            width: 800px;
+            display: block;
+            margin: auto;
+            border: solid 8px #141d20;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+    }
+
+
+
+/*desktop view*/ 
+@media screen and (min-width: 992px) {
+    
+    .indexgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 20px;
+        grid-column-gap: 10px;
+    }
+    
+    .indexgrid div{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f7eeeedd;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .grid{
+        width: 90%;
+        margin: auto;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-column-gap: 35px;
+        grid-row-gap: 10px;
+    }
+    
+    .grid div{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f7eeeedd;
+    }
+    
+    .gridview{
+        width: 90%;
+        margin: auto;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-column-gap: 35px;
+        grid-row-gap: 10px;
+    }
+
+    .gridview div{
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f7eeeedd;
+    }
+
+    main div:nth-of-type(odd) img{
+        border: dashed 8px #141d20;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+    
+    main div:nth-of-type(even) img{
+        border: dashed 8px #F05C5E;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        }
+    
+    .bgimage img{
+        width: 800px;
+        display: block;
+        margin: auto;
+        border: dashed 8px #141d20;
+        padding: 10px;
+        border-radius: 20px;
+        }
+           
+    img {
+        animation: fadeIn 3s;
+        }
+          
+         @keyframes fadeIn {
+            0% { opacity: 0; 
+            }
+            100% { opacity: 1; 
+            }
+        }
+    .audio-container {
+        display: none;
+        }
+}
+
+
+
+
+ @media screen and (prefers-reduced-motion: reduce){
+       img{
+        animation: none;
+       } 
+       /*Turn off transition*/
+    a.skip {
+        -webkit-transition: initial; /* sets to default setting */
+        transition: initial; /* sets to default setting */
+      }
+    }
+
