@@ -319,10 +319,9 @@ a{
     margin-left: 20px;
 }
 .indexgrid{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     border-radius: 20px;
-    grid-row-gap: 10px;
+    flex-direction: column;
 }
 
 .indexgrid div{
@@ -381,6 +380,18 @@ footer .fa-solid{
   
    /*tablet view*/ 
 @media screen and (min-width: 768px) {
+    
+       .indexgrid{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+       .one{
+            width: 300px;
+            margin: 20px;
+        }
+    
         .grid{
             width: 90%;
             margin: auto;
@@ -452,11 +463,10 @@ footer .fa-solid{
 /*desktop view*/ 
 @media screen and (min-width: 992px) {
     
-    .indexgrid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+     .indexgrid{
+        display: flex;
         border-radius: 20px;
-        grid-column-gap: 10px;
+        flex-direction: row;     
     }
     
     .indexgrid div{
@@ -465,6 +475,9 @@ footer .fa-solid{
         background-color: #f7eeeedd;
         margin-bottom: 10px;
         text-align: center;
+        margin: 10px;
+        flex: 1;
+
     }
 
     .grid{
