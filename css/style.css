@@ -113,7 +113,7 @@ nav .nav-container a:hover{
 }
 
 #menu_label {
-    display: none;
+    visibility: hidden;
     opacity: 0;
 }
 
